@@ -2,17 +2,10 @@
 let heightNav;
 let heightWindow;
 
-(function ($) {
-  $(function () {
-
-    windowResize()
-    positionNav();
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
-
+windowResize()
+positionNav();
+$('.sidenav').sidenav();
+$('.parallax').parallax();
 
 //after
 $(window).resize(function () {
@@ -35,11 +28,14 @@ function windowResize() {
 }
 
 function positionNav() {
+  if ($(window).scrollTop() >= heightNav) {
+    $('nav').css({ opacity: 0 });
+  } else $('nav').css({ opacity: 1 });
   if ($(window).scrollTop() >= heightWindow) {
-    $('nav').addClass('fixed white').removeClass('shadowDelete');
+    $('nav').css({ transition: 'background-color, opacity .1s ease-in-out', opacity: 1 }).addClass('fixed white').removeClass('shadowDelete');
     $('nav ul a').removeClass('hoverDelete');
   } else {
     $('nav').removeClass('fixed white').addClass('shadowDelete');
     $('nav ul a').addClass('hoverDelete');
-  } 
+  }
 }
