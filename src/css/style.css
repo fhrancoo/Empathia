@@ -61,3 +61,23 @@ footer.page-footer {
 .logo-img {
   width: 100px;
 }
+
+.fixed {
+  position: fixed;
+  top: 0px;
+}
+
+nav {
+  position: absolute;
+  background-color: transparent;
+  z-index: 999999;
+}
+
+.shadowDelete {
+  box-shadow: none !important;
+}
+
+.hoverDelete:hover {
+  background-color: transparent;
+  color: #e8442f;
+}
