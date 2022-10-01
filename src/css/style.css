@@ -83,3 +83,12 @@ nav {
   background-color: transparent;
   color: #e8442f;
 }
+
+.icon-svg {
+  width: 50%;
+  max-width: 50%;
+}
+.icon-text {
+  text-align: justify;
+  font-size: 17px;
+}
