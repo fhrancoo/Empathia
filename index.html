@@ -29,17 +29,19 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo"><img class="logo-img" src="src/img/only-logo.png" /></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Servicos</a></li>
-          <li><a href="#">Trabajos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#servicios">Servicos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Servicos</a></li>
-          <li><a href="#">Trabajos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#servicios">Servicos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
@@ -48,55 +50,56 @@
 
     <ul class="slides">
       <li>
-        <img class="responsive-img" src="src/img/Empathia-slogan.png">
+        <img id="banner" src="src/img/Empathia-slogan.png">
       </li>
       <li>
-        <img src="src/img/background1.jpg"> random image
-        <div class="caption left-align">
-          <h3>Right Aligned Caption</h3>
-          <h3 class="light grey-text text-lighten-3">Somos una agencia que empatiza con el cliente.
-            Comprendemos y escuchamos activamente para generar una comunicación asertiva</h3>
-        </div>
-      </li>
-      <li>
-        <img src="src/img/background3.jpg"> random image
-        <div class="caption center-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">
+        <img id="banner2" src="src/img/pexels-eva-bronzini-7661185.jpg">
+        <div style="color: #e8442f; top: 50%; left: 5%;" class="caption left-align">
+          <h3 style="font-weight: 600;">Somos una agencia que empatiza con el cliente</h3>
+          <h5 class="light">
+            Comprendemos y escuchamos activamente para generar una comunicación asertiva.
           </h5>
         </div>
+      </li>
+      <li>
+        <img id="banner3" src="src/img/background1.jpg">
       </li>
     </ul>
   </div>
 
+<!-- ----------------------------------------------------------------------------- -->
 
-  <div class="col s12 center">
-    <h3><i class="mdi-content-send brown-text"></i></h3>
-    <h4>¿Qué hacemos?</h4>
-    <p class="center-align light">Creemos que la manera en la que nos comunicamos con el resto de las personas,
-      -en nuestra vida privada, social y profesional-, es vital a la hora de gestar nuestra propio estado de
-      felicidad. Por esa razón, desarrollamos estrategias de comunicación asertiva para que las empresas e
-      instituciones puedan comunicarse con sus trabajadores y/o clientes. Los tres pilares de la agencia son la
-      empatía, la interacción y la innovación. Queremos empresas felices.
-    </p>
+<div id="servicios" style="height: 56px; width:100%"></div>
 
+<div style="margin-top: 6rem; margin-bottom: 6rem" class="container">
+  <div class="row">
+    <div class="col s12 center">
+      <h4 style="font-weight: bold;">SERVICIOS</h4>
+      <p style="font-size: 1.3rem;" class="light center-align">Creemos que la manera en la que nos comunicamos con el resto de las personas,
+        -en nuestra vida privada, social y profesional-, es vital a la hora de gestar nuestra propio estado de
+        felicidad. Por esa razón, desarrollamos estrategias de comunicación asertiva para que las empresas e
+        instituciones puedan comunicarse con sus trabajadores y/o clientes. Los tres pilares de la agencia son la
+        empatía, la interacción y la innovación. Queremos empresas felices.
+      </p>
+    </div>
+  </div>
+</div>
 
-    <div class="divider"></div>
 <!-- ----------------------------------------------------------------------------- -->
     <div class="container">
       <div class="row">
         <div class="col s12 l6">
           <h2 class="center"><img class="icon-svg" src="src/svg/multimedia.svg"></h2>
-          <h5 class="center">Creatividad y contenidos</h5>
-          <p class="light icon-text">Producimos piezas para diferentes públicos y con distintos objetivos.<br>
+          <h5 class="center">CREATIVIDAD Y CONTENIDOS</h5>
+          <p class="light center-align">Producimos piezas para diferentes públicos y con distintos objetivos.<br>
             Cobertura de eventos.<br>
             Realización y producción audiovisual (programas de tv, micros televisivos, etc.).
           </p>
         </div>
         <div class="col s12 l6">
           <h2 class="center"><img class="icon-svg" src="src/svg/communication.svg"></h2>
-          <h5 class="center">Cultura y comunicación interna</h5>
-          <p class="light icon-text">
+          <h5 class="center">CULTURA Y COMUNICACIÓN INTERNA</h5>
+          <p class="light center-align">
             Gestionamos la comunicación interna entre los colaboradores de la empresa para generar vínculos positivos,
             aumentar el sentido de pertenencia y así ayudar al logro de los objetivos de la misma.
           </p>
@@ -106,8 +109,8 @@
       <div class="row">
         <div class="col s12 l6">
           <h2 class="center"><img class="icon-svg" src="src/svg/people.svg"></h2>
-          <h5 class="center">Marketing ATL</h5>
-          <p class="light icon-text">
+          <h5 class="center">MARKETING ATL</h5>
+          <p class="light center-align">
             El marketing ATL (Above the Line), en español “por encima de la línea de la promoción”, está dirigido a un
             público general y tienen un gran alcance.<br>
             Se emplea para el desarrollo de la marca y el aporte de información a los
@@ -120,8 +123,8 @@
         </div>
         <div class="col s12 l6">
           <h2 class="center"><img class="icon-svg" src="src/svg/people2.svg"> </h2>
-          <h5 class="center">Marketing BTL</h5>
-          <p class="light icon-text">
+          <h5 class="center">MARKETING BTL</h5>
+          <p class="light center-align">
             El marketing BTL (Below the Line), en español “bajo la linea de promoción”, se trata de actividades
             específicas, directas y memorables, las cuales tienen como destino grupo particulares de consumidores o
             clientes.<br>
@@ -139,92 +142,90 @@
       <div class="row">
         <div class="col s12 offset-l3 l6 offset-l3">
           <h2 class="center"><img class="icon-svg" src="src/svg/brand.svg"></h2>
-          <h5 class="center">Branding</h5>
-          <p class="light icon-text">
+          <h5 class="center">BRANDING</h5>
+          <p class="light center-align">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
             volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.
           </p>
         </div>
       </div>
     </div>
-<!-- ----------------------------------------------------------------------------- -->
 
-    <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-          </div>
+    <!-- ----------------------------------------------------------------------------- -->
+
+    <div id="nosotros" style="height: 56px; width:100%"></div>
+
+    <div style="background-color: rgba(92, 92, 92, 0.589);" class="parallax-container valign-wrapper">
+       <div class="container">
+        <div class="row center">
+          <h4 style="font-weight: bold;">NUESTRO ADN</h4>
+          <p style="font-size: 1.3rem;" class="col s12 center-align light header">En un mundo hiperconectado y sobreinformado, la empatía es la clave para lograr
+            una comunicación asertiva, clara y sin ruidos.
+            Sabemos que la comunicación es el intercambio de ideas, sentimientos, actitudes y emociones. Pero, muchas
+            veces, nos olvidamos de su importancia y de lo esencial que es para el desarrollo humano e institucional.
+            En este contexto nació <b>Empathia</b>. Con la bandera de escucharnos, mirarnos y entendernos. Hacemos lo
+            inusual para generar conexiones reales, honestas y solidas.
+          </p>
         </div>
       </div>
-      <div class="parallax"><img src="src/img/background2.jpg" alt="Unsplashed background img 2"></div>
+      <div class="parallax"><img style="min-width: 1000px; width: 100%; overflow: hidden;" src="src/img/pexels-canva-studio-3194518.jpg"></div>
     </div>
 
-    <div class="container">
-      <div class="section">
+    <!-- ----------------------------------------------------------------------------- -->
 
-        <div class="row">
-          <div class="col s12 center">
-            <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>Nuestro ADN</h4>
-            <p class="left-align light">En un mundo hiperconectado y sobreinformado, la empatía es la clave para lograr
-              una comunicación asertiva, clara y sin ruidos.
-              Sabemos que la comunicación es el intercambio de ideas, sentimientos, actitudes y emociones. Pero, muchas
-              veces, nos olvidamos de su importancia y de lo esencial que es para el desarrollo humano e institucional.
-              En este contexto nació <b>Empathia</b>. Con la bandera de escucharnos, mirarnos y entendernos. Hacemos lo
-              inusual para generar conexiones reales, honestas y solidas.
-            </p>
-          </div>
-        </div>
+    <div style="margin-top: 6rem; margin-bottom: 6rem" class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h4 style="font-weight: bold; margin-bottom: 3rem;">NOSOTROS</h4>
+          <p style="font-size: 1.3rem;" class="light center-align">
+            En un mundo hiperconectado y sobreinformado, la empatía es la clave para lograr
+            una comunicación asertiva, clara y sin ruidos.
+            Sabemos que la comunicación es el intercambio de ideas, sentimientos, actitudes y emociones. Pero, muchas
+            veces, nos olvidamos de su importancia y de lo esencial que es para el desarrollo humano e institucional.
+            En este contexto nació <b>Empathia</b>. Con la bandera de escucharnos, mirarnos y entendernos. Hacemos lo
+            inusual para generar conexiones reales, honestas y solidas.<br><br>
 
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="section">
-
-        <div class="row">
-          <div class="col s12 center">
-            <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>¿Quiénes somos?</h4>
-            <p class="left-align light">En un mundo hiperconectado y sobreinformado, la empatía es la clave para lograr
-              una comunicación asertiva, clara y sin ruidos.<br>
-              Sabemos que la comunicación es el intercambio de ideas, sentimientos, actitudes y emociones. Pero, muchas
-              veces, nos olvidamos de su importancia y de lo esencial que es para el desarrollo humano e institucional.
-              En este conecto nació Empathia. Con la bandera de escucharnos, mirarnos y entendernos. Hacemos lo inusual
-              para generar conexiones reales, honestas y solidas.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
+            <span style="font-weight: bolder;"> ¿Por qué es importante invertir en comunicación?</span><br>
+            Porque es importante fortalecer tu marca tanto para tus clientes como para los que trabajan dentro de tu equipo. Las buenas acciones comunicacionales convierten a tus empleados en potentes embajadores de tu empresa frente a todos públicos 
+            Porque es posible construir conversaciones saludables y aumentar el compromiso de tu gente
+            Porque tus colaboradores y tus clientes son potentes embajadores de tu empresa.<br><br>
 
 
-    <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-          </div>
+            <span style="font-weight: bolder;"> ¿Por qué elegirnos?</span><br>
+            Somos una agencia que cree firmemente en el poder transformador que tiene la comunicación en todos los niveles. Realizamos un trabajo personalizado y minucioso y nos convertimos en uno más de la organización que nos contrata, comprendiendo sus necesidades desde adentro.
+            Entendemos el ADN de la empresa para transmitir la personalidad de la institución y los valores que la fundamentan. 
+            Trabajamos para lograr la armonía entre la imagen real, la que se desea dar y la percibida. 
+            Somos felices comunicando. 
+          </p>
         </div>
       </div>
-      <div class="parallax"><img src="src/img/background3.jpg" alt="Unsplashed background img 3"></div>
     </div>
 
-    <div class="container">
-      <div class="section">
 
-        <div class="row">
-          <div class="col s12 center">
-            <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>Trabajos</h4>
-            <p class="left-align light">MBN Y SPOT</p>
-          </div>
+    <!-- ----------------------------------------------------------------------------- -->
+
+    <div id="clientes" style="height: 56px; width:100%"></div>
+
+
+    <div style="margin-top: 6rem; margin-bottom: 6rem;" class="container">
+      <h4 style="font-weight: bold;" class="center-align">CLIENTES</h4>
+      <div class="row">
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="src/img/only-logo.png"></a>
+          <a class="carousel-item" href="#two!"><img src="src/img/only-logo.png"></a>
+          <a class="carousel-item" href="#three!"><img src="src/img/only-logo.png"></a>
+          <a class="carousel-item" href="#four!"><img src="src/img/only-logo.png"></a>
+          <a class="carousel-item" href="#five!"><img src="src/img/only-logo.png"></a>
         </div>
-
       </div>
-    </div>
+    </div>  
+
+    <!-- ----------------------------------------------------------------------------- -->
+
+
+
+
+    <div id="contacto" style="height: 56px; width:100%"></div>
 
     <footer class="page-footer teal">
       <div class="container">
@@ -259,7 +260,7 @@
       </div>
       <div class="footer-copyright">
         <div class="container">
-          Made by <a class="brown-text text-lighten-3" href="#">fhrancoo</a>
+          made by <a class="amber-text lighten-5" href="https://www.francoolivero.com.ar " target="_blank">fhrancoo</a>
         </div>
       </div>
     </footer>
