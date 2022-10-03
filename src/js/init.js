@@ -6,7 +6,7 @@ windowResize()
 positionNav();
 $('.sidenav').sidenav();
 $('.parallax').parallax();
-$('.carousel').carousel({ shift: 20, padding: 60});
+$('.carousel').carousel();
 
 //after
 $(window).resize(function () {

@@ -8,6 +8,7 @@
 
  html {
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 nav ul a,
@@ -125,4 +126,27 @@ nav {
   min-height: 50rem;
   max-height: 60rem;
   height: auto !important;
+}
+
+.phones,
+.phones i,
+.phones p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon-redes {
+  width: 2rem;
+  fill: whitesmoke;
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.logo-footer {
+  height: 17rem;
+  display: flex;
+  justify-content: center;
 }
