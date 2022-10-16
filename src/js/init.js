@@ -6,7 +6,10 @@ windowResize()
 positionNav();
 $('.sidenav').sidenav();
 $('.parallax').parallax();
-$('.carousel').carousel();
+const carousel = $('.carousel').carousel();
+$('.modal').modal();
+$('.tooltipped').tooltip();
+const tabs = $('.tabs').tabs();
 
 //after
 $(window).resize(function () {
