@@ -31,17 +31,17 @@
         <a id="logo-container" href="#" class="brand-logo"><img class="logo-img" src="src/img/only-logo.png" /></a>
         <ul class="right hide-on-med-and-down">
           <li><a onclick="pageTabs('home')" href="#">Home</a></li>
-          <li><a onclick="pageTabs('servicios')" href="#serviciosScroll">Servicios</a></li>
+          <li><a onclick="pageTabs('servis')" href="#serviciosScroll">Servicios</a></li>
           <li><a onclick="pageTabs('nosotros')" href="#nosotrosScroll">Nosotros</a></li>
           <li><a onclick="pageTabs('trabajos')" href="#trabajosScroll">Trabajos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="#" onclick="pageTabs('home')">Home</a></li>
-          <li><a onclick="pageTabs('servicios')">Servicios</a></li>
-          <li><a onclick="pageTabs('nosotros')">Nosotros</a></li>
-          <li><a onclick="pageTabs('trabajos')" href="#trabajos">Trabajos</a></li>
+          <li><a onclick="pageTabs('home')" href="#">Home</a></li>
+          <li><a onclick="pageTabs('servis')" href="#serviciosScroll">Servicios</a></li>
+          <li><a onclick="pageTabs('nosotros')" href="#nosotrosScroll">Nosotros</a></li>
+          <li><a onclick="pageTabs('trabajos')" href="#trabajosScroll">Trabajos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -50,24 +50,27 @@
 
     <ul id="slide" class="slides">
       <li>
-        <img id="banner" src="src/img/Empathia-slogan.png">
+        <img id="banner">
       </li>
       <li>
-        <img id="banner2" src="src/img/pexels-eva-bronzini-7661185.jpg">
+        <img id="banner2">
+      </li>
+      <!-- <li>
+        <img id="banner2" src="src/img/branding.jpg">
         <div style="color: #e8442f; top: 50%; left: 5%;" class="caption left-align">
           <h3 style="font-weight: 600;">Somos una agencia que empatiza con el cliente</h3>
           <h5 class="light">
             Comprendemos y escuchamos activamente para generar una comunicación asertiva.
           </h5>
         </div>
-      </li>
+      </li> -->
     </ul>
   </div>
 
   <ul class="tabs hide">
     <li class="tab"><a class="active" href="#home"></a></li>
     <li class="tab"><a href="#nosotros"></a></li>
-    <li class="tab"><a href="#servicios"></a></li>
+    <li class="tab"><a href="#servis"></a></li>
   </ul>
 
   <div id="home">
@@ -163,7 +166,7 @@
         <div class="modal-content">
           <div class="video-container">
             <iframe src="https://drive.google.com/file/d/1mL1_fsnqM3q6UjvBMmBCAAfWNueyXsWl/preview" width="640"
-            height="480" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>
+            height="480" frameborder="0" seamless sandbox="allow-scripts allow-same-origin"></iframe>
           </div>
         </div>
       </div>
@@ -172,7 +175,7 @@
         <div class="modal-content">
           <div class="video-container">
             <iframe src="https://drive.google.com/file/d/14I7YFERAQsqg-hMyg94O_n8b4NZD9pFq/preview" width="640"
-              height="480" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>
+              height="480" frameborder="0" seamless sandbox="allow-scripts allow-same-origin"></iframe>
           </div>
         </div>
       </div>
@@ -186,9 +189,9 @@
   <!-- ----------------------------------------------------------------------------- -->
 
   <div id="nosotros">
-    <div id="nosotrosScroll" style="height: 56px; width:100%"></div>
+    <div id="nosotrosScroll" style="height: 57px; width:100%"></div>
 
-    <div class="container">
+    <div class="container" style="margin-bottom: 6rem">
       <div class="row">
         <div class="col s12 center">
           <h4 style="font-weight: bold; margin-bottom: 3rem;">NOSOTROS</h4>
@@ -225,9 +228,8 @@
 
   <!-- ----------------------------------------------------------------------------- -->
 
-  <div id="servicios">
-
-    <div id="serviciosScroll" style="height: 56px; width:100%"></div>
+  <div id="servis">
+    <div id="serviciosScroll" style="height: 57px; width:100%"></div>
 
     <div style="margin-bottom: 6rem" class="container">
       <div class="row">
@@ -382,9 +384,9 @@
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
   <script src="src/js/jquery-3.6.1.min.js"></script>
-  <script src="src/js/materialize.js"></script>
+  <script src="src/js/materialize.min.js"></script>
   <script src="src/js/init.js"></script>
   <script src="src/js/helpers.js"></script>
 </body>

@@ -15,27 +15,23 @@ function redes(params) {
   }
 }
 
+const instanceTabs = M.Tabs.getInstance(tabs);
 function pageTabs(params) {
-  console.log('params: ', params);
   switch (params) {
     case "home":
-      tabs.tabs('select', 'home').updateTabIndicator();
-      
-      $('.slide').removeClass("hide");
+      instanceTabs.select('home')
       break;
     case "nosotros":
-      tabs.tabs('select', 'nosotros').updateTabIndicator(); 
-      $('.slide').addClass("hide");
+      instanceTabs.select('nosotros')
       break;
-    case "servicios":
-      tabs.tabs('select', 'servicios').updateTabIndicator(); 
-      $('.slide').addClass("hide");
+    case "servis":
+      instanceTabs.select('servis')
+      break;
     case "trabajos":
-      tabs.tabs('select', 'home').updateTabIndicator(); 
-      $('.slide').removeClass("hide");
+      instanceTabs.select('home')
+      break;
     default:
-      tabs.tabs('select', 'home').updateTabIndicator(); 
-      $('.slide').removeClass("hide");
+      instanceTabs.select('home')
       break;
   }
 }
