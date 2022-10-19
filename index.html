@@ -31,18 +31,18 @@
         <a id="logo-container" href="#" class="brand-logo"><img class="logo-img" src="src/img/only-logo.png" /></a>
         <ul class="right hide-on-med-and-down">
           <li><a onclick="pageTabs('home')" href="#">Home</a></li>
-          <li><a onclick="pageTabs('servis')" href="#serviciosScroll">Servicios</a></li>
           <li><a onclick="pageTabs('nosotros')" href="#nosotrosScroll">Nosotros</a></li>
+          <li><a onclick="pageTabs('servis')" href="#serviciosScroll">Servicios</a></li>
           <li><a onclick="pageTabs('trabajos')" href="#trabajosScroll">Trabajos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a onclick="pageTabs('contacto')" href="#contacto">Contacto</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
           <li><a onclick="pageTabs('home')" href="#">Home</a></li>
-          <li><a onclick="pageTabs('servis')" href="#serviciosScroll">Servicios</a></li>
           <li><a onclick="pageTabs('nosotros')" href="#nosotrosScroll">Nosotros</a></li>
+          <li><a onclick="pageTabs('servis')" href="#serviciosScroll">Servicios</a></li>
           <li><a onclick="pageTabs('trabajos')" href="#trabajosScroll">Trabajos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a onclick="pageTabs('contacto')" href="#contacto">Contacto</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
@@ -54,7 +54,14 @@
       </li>
       <li>
         <img id="banner2">
+        <div style="color: #e8442f; top: 50%; left: 5%;" class="caption left-align">
+          <h3 style="font-weight: 600;">Somos una agencia que empatiza con el cliente</h3>
+          <h5 class="light">
+            Comprendemos y escuchamos activamente para generar una comunicación asertiva.
+          </h5>
+        </div>
       </li>
+
       <!-- <li>
         <img id="banner2" src="src/img/branding.jpg">
         <div style="color: #e8442f; top: 50%; left: 5%;" class="caption left-align">
@@ -91,7 +98,7 @@
         </div>
       </div>
       <div class="parallax"><img style="min-width: 1000px; width: 100%; overflow: hidden;"
-          src="src/img/pexels-canva-studio-3194518.jpg"></div>
+          src="src/img/ADN.jpeg"></div>
     </div>
 
     <!-- ----------------------------------------------------------------------------- -->
@@ -129,15 +136,13 @@
       </div>
     </div>   -->
 
-    <!-- ----------------------------------------------------------------------------- -->
-
     <div id="trabajosScroll" style="height: 56px; width:100%"></div>
 
     <div class="container">
       <h4 style="font-weight: bold;" class="center-align">TRABAJOS</h4>
 
       <div style="margin-top: 6rem" class="row card-container">
-        <div class="card">
+        <div class="card hoverable">
           <div class="card-image">
             <img src="src/img/video1.png">
             <span class="card-title">Video</span>
@@ -147,7 +152,7 @@
             <p>Producción y edición de videos</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card hoverable">
           <div class="card-image">
             <img src="src/img/video2.png">
             <span class="card-title">Video</span>
@@ -155,6 +160,41 @@
           </div>
           <div class="card-content">
             <p>Producción y edición de videos</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------------------------------------------------------- -->
+
+      <div id="contacto" style="height: 56px; width:100%"></div>
+
+      <div class="container">
+        <h4 style="font-weight: bold;" class="center-align">CONTACTO</h4>
+
+        <div class="card-container" style="margin-top: 6rem; margin-bottom: 6rem;">
+          <div style="height: 528px;" class="card">
+            <div class="card-image">
+              <img src="src/img/Estefi.jpeg">
+              <span class="card-title cardTitleBlack">Estefanía Ferrero</span>
+            </div>
+            <div class="card-content">
+              <div class="phones">
+                <i class="material-icons">phone_iphone</i>
+                <p>+54 11 54000076</p>
+              </div>
+            </div>
+          </div>
+          <div style="height: 528px;" class="card">
+            <div class="card-image">
+              <img src="src/img/Belen.jpeg">
+              <span class="card-title cardTitleBlack">María Belén Pussetto</span>
+            </div>
+            <div class="card-content">
+              <div class="phones">
+                <i class="material-icons">phone_iphone</i>
+                <p>+54 3562 409857</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -317,44 +357,11 @@
 
   <!-- ----------------------------------------------------------------------------- -->
 
-  <footer id="contacto" class="page-footer">
+  <footer class="page-footer">
     <div class="container">
-      <div class="row">
-
-        <div class="col s12 m4 center-align">
-          <h6 style="font-weight: bolder;" class="white-text">CONTACTO</h6>
-          <ul>
-            <li>
-              <p style="font-size: 1.3rem; margin: 0px;">Estefanía Ferrero</p>
-              <div class="phones">
-                <i class="material-icons">phone_iphone</i>
-                <p>+54 11 54000076</p>
-              </div>
-            </li>
-            <li style="margin-top: 2rem;">
-              <p style="font-size: 1.3rem; margin: 0px;" class="no">María Belén Pussetto</p>
-              <div class="phones">
-                <i class="material-icons">phone_iphone</i>
-                <p>+54 3562 409857</p>
-              </div>
-            </li>
-            <li style="margin-top: 2rem;">
-              <p style="font-size: 1.3rem; margin: 0px;" class="no"></p>
-              <div class="phones">
-                <i class="material-icons">mail_outline</i>
-                <p style="margin-left: 5px;">agenciaempathia@gmail.com</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col s12 m4 logo-footer valign-wrapper">
-          <h3 style="font-weight: bolder;" class="white-text">EMPATHIA</h3>
-        </div>
-
-
-        <div class="col s12 m4 center-align">
-          <h6 style="font-weight: bolder;" class="white-text">SOCIAL</h6>
+        <h3 style="font-weight: bolder;" class="white-text center-align">empathia</h3>
+        <div class="col s12 center-align">
+          <!-- <h6 style="font-weight: bolder;" class="white-text">SOCIAL</h6> -->
           <svg onclick="redes('ig')" style="margin-left:0px" class="icon-redes" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512">
             <path
@@ -372,9 +379,11 @@
             <path
               d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
           </svg>
-
         </div>
-      </div>
+        <div class="phones col s12 center-align">
+          <i class="material-icons">mail_outline</i>
+          <p style="margin-left: 5px;">agenciaempathia@gmail.com</p>
+        </div>
     </div>
     <div class="footer-copyright">
       <div class="container">

@@ -21,7 +21,7 @@ $(window).resize(function () {
     $("#banner2").attr("src","./src/img/mobile2.jpg");
   } else {
     $("#banner").attr("src", "./src/img/Empathia-slogan.png");
-    $("#banner2").attr("src","./src/img/branding.jpg");
+    $("#banner2").attr("src","./src/img/brand.jpg");
   }
 
   $('.slider').slider({ indicators: false, height: heightWindow });
@@ -40,7 +40,7 @@ function windowResize() {
     $("#banner2").attr("src","./src/img/mobile2.jpg");
   } else {
     $("#banner").attr("src", "./src/img/Empathia-slogan.png");
-    $("#banner2").attr("src","./src/img/branding.jpg");
+    $("#banner2").attr("src","./src/img/brand.jpg");
 
   }
 

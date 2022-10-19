@@ -7,6 +7,7 @@ function redes(params) {
         window.open("https://www.facebook.com/profile.php?id=100086478524870","_blank");
       break;
     case "tw":
+      window.open("https://twitter.com/EmpathiaAgencia","_blank");
       break;
     case "ln":
       break;
@@ -26,9 +27,6 @@ function pageTabs(params) {
       break;
     case "servis":
       instanceTabs.select('servis')
-      break;
-    case "trabajos":
-      instanceTabs.select('home')
       break;
     default:
       instanceTabs.select('home')
