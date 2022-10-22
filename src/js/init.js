@@ -4,10 +4,10 @@ let heightWindow;
 
 windowResize()
 positionNav();
-$('.sidenav').sidenav();
 $('.parallax').parallax();
 $('.tooltipped').tooltip();
 $('.modal').modal();
+const sidenav = $('.sidenav').sidenav();
 const carousel = $('.carousel').carousel();
 const tabs = $('.tabs').tabs();
 
@@ -18,10 +18,10 @@ $(window).resize(function () {
   
   if ($(window).width() <= 600) {
     $("#banner").attr("src", "./src/img/logo-vertical.jpg");
-    $("#banner2").attr("src","./src/img/mobile2.jpg");
+    $("#banner2").attr("src","./src/img/banner2Mobile.jpg");
   } else {
     $("#banner").attr("src", "./src/img/Empathia-slogan.png");
-    $("#banner2").attr("src","./src/img/brand.jpg");
+    $("#banner2").attr("src","./src/img/banner2.jpg");
   }
 
   $('.slider').slider({ indicators: false, height: heightWindow });
@@ -37,10 +37,10 @@ function windowResize() {
 
   if ($(window).width() <= 600) {
     $("#banner").attr("src", "./src/img/logo-vertical.jpg");
-    $("#banner2").attr("src","./src/img/mobile2.jpg");
+    $("#banner2").attr("src","./src/img/banner2Mobile.jpg");
   } else {
     $("#banner").attr("src", "./src/img/Empathia-slogan.png");
-    $("#banner2").attr("src","./src/img/brand.jpg");
+    $("#banner2").attr("src","./src/img/banner2.jpg");
 
   }
 

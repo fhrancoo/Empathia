@@ -6,6 +6,15 @@
  * Made By MaterializeCSS.com
  */
 
+@font-face {
+  font-family: Miraikato-Normal;
+  src: url('../fonts/MiraikatoHandPERSONALUSE-Regular.otf');
+}
+@font-face {
+  font-family: Miraikato-Thin;
+  src: url('../fonts/MiraikatoHandPERSONALUSE-Thin.otf');
+}
+
  html {
   scroll-behavior: smooth;
   cursor: default;
@@ -170,4 +179,10 @@ nav {
   padding: 2px 12px 4px 12px !important;
   background-color: #00000091;
   border-radius: 0px 13px 13px 0px;
+}
+
+.banner2 div {
+  color: #e8442f !important;
+  top: 50% !important;
+  left: 5% !important;
 }

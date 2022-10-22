@@ -17,19 +17,25 @@ function redes(params) {
 }
 
 const instanceTabs = M.Tabs.getInstance(tabs);
+const instanceSidenav = M.Sidenav.getInstance(sidenav);
+
 function pageTabs(params) {
   switch (params) {
     case "home":
       instanceTabs.select('home')
+      instanceSidenav.close();
       break;
     case "nosotros":
       instanceTabs.select('nosotros')
+      instanceSidenav.close();
       break;
     case "servis":
       instanceTabs.select('servis')
+      instanceSidenav.close();
       break;
     default:
       instanceTabs.select('home')
+      instanceSidenav.close();
       break;
   }
 }
