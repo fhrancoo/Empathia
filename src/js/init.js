@@ -51,7 +51,7 @@ function positionNav() {
   if ($(window).scrollTop() >= heightNav) {
     $('nav').css({ opacity: 0 });
   } else $('nav').css({ opacity: 1 });
-  if ($(window).scrollTop() >= heightWindow) {
+  if ($(window).scrollTop() >= heightWindow -2) {
     $('nav').css({ transition: 'background-color, opacity .1s ease-in-out', opacity: 1 }).addClass('fixed white').removeClass('shadowDelete');
     $('nav ul a').removeClass('hoverDelete');
   } else {
