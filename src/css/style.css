@@ -182,11 +182,10 @@ nav {
 }
 
 .banner2 div {
-  color: #e8442f !important;
+  color: white !important;
   top: 50% !important;
   left: 5% !important;
   filter: brightness(90%)
-  drop-shadow(0px 0px 4px #f0b7b0);
 }
 
 .banner2 span {
