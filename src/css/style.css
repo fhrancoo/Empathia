@@ -15,7 +15,7 @@
   src: url('../fonts/MiraikatoHandPERSONALUSE-Thin.otf');
 }
 
- html {
+html {
   scroll-behavior: smooth;
   cursor: default;
 }
