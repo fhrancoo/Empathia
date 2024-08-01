@@ -2,15 +2,35 @@
 let heightNav;
 let heightWindow;
 
+initCarrusel();
 windowResize()
 positionNav();
 $('.parallax').parallax();
 $('.modal').modal();
 const sidenav = $('.sidenav').sidenav();
-const carousel = $('.carousel').carousel();
 const tabs = $('.tabs').tabs();
 const instanceTabs = M.Tabs.getInstance(tabs);
 const instanceSidenav = M.Sidenav.getInstance(sidenav);
+const carousel = $('.carousel').carousel({
+  dist: -60,
+  // shift: 10,
+  padding: 50,
+  // numVisible: 5,
+  // fullWidth: true,
+  // noWrap: true,
+  // onCycleTo: function (item) {
+  //   item.style.transform = 'scale(1.5)';
+  // }
+});  
+const instanceCarousel = M.Carousel.getInstance(carousel);
+
+setInterval(() => {
+  if (!instanceCarousel.pressed && !instanceCarousel.dragged) {
+    instanceCarousel.next();
+  }
+}, 3000);
+
+// initCarrusel.
 
 
 //Functions
@@ -98,4 +118,24 @@ function pageTabs(params) {
       instanceSidenav.close();
       break;
   }
+}
+
+function initCarrusel() {
+  for (let i = 1; i <= 11; i++) {
+    $('.carousel').append(`<a class="carousel-item" href="#item${i}"><img src="src/img/customers/${i}.png"></a>`)
+  }
+
+  // const carousel = $('.carousel').carousel({
+    // dist: -100,
+    // shift: 10,
+    // padding: 0,
+    // numVisible: 5,
+    // fullWidth: false,
+    // noWrap: true,
+    // onCycleTo	: function (item) {
+    //   console.log(item);
+    // }
+  // });
+
+  // console.log(carousel);
 }
